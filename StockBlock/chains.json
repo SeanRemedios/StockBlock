@@ -1,1 +1,73 @@
-{}
+{
+  "0x1432358a042bff59afcfadba87389529afda7c9c82b62901a669c9ae118c3226": {
+    "contracts": {
+      "0x8fe99f3d1f740d127266c135eb7c7a8d1b2ca9c4635d42cb8529744f3829c65a": {
+        "name": "StockBlock",
+        "address": "0xdc7503caba955fcf63edfd1a39057cd6dfd4dd94"
+      }
+    },
+    "name": "development"
+  },
+  "0x60c14d22d1cbbeb9d65dc1c8b504a436f0968fdafa8e18c61a001eba82258803": {
+    "contracts": {
+      "0x8fe99f3d1f740d127266c135eb7c7a8d1b2ca9c4635d42cb8529744f3829c65a": {
+        "name": "StockBlock",
+        "address": "0x7fad3dd48ddfba91d3fff291782cb013d1df60dc"
+      }
+    },
+    "name": "development"
+  },
+  "0x3926a24829161e312c3d44979851bec77a4819a92ecefa9e225cfa38d34097e5": {
+    "contracts": {
+      "0x6a87c62da36a3ad8a40add5d9ac419d58f08afa5af91aa08c67c2a4263c1eba5": {
+        "name": "StockBlock",
+        "address": "0x57c682043f2025780b3333815e5c6731dbf450eb"
+      }
+    },
+    "name": "development"
+  },
+  "0x16f68337fdd83e7aca684d36f7e68273d698f43ce5457ead0da3e10c535c9ccf": {
+    "contracts": {
+      "0x87ea6203e652534847955d521f0ba43109f5013b1c5e49d1b451a1ae10e8ec37": {
+        "name": "StockBlock",
+        "address": "0xf2643990cad244b192de75d6cdafc5068ecfc33a"
+      }
+    },
+    "name": "development"
+  },
+  "0xe21814e373ae063ba23784570ce28a08f8b5e6b3f4b6ebb2329c3c57ee91b551": {
+    "contracts": {
+      "0x87ea6203e652534847955d521f0ba43109f5013b1c5e49d1b451a1ae10e8ec37": {
+        "name": "StockBlock",
+        "address": "0x90dd7085be56c1de8df1c3aecb40cae19558e055"
+      }
+    },
+    "name": "development"
+  },
+  "0x270d711dbdb906c9a3b83621e25088de7a82f29da6026f4884e52b9857066ff8": {
+    "contracts": {
+      "0x87ea6203e652534847955d521f0ba43109f5013b1c5e49d1b451a1ae10e8ec37": {
+        "name": "StockBlock",
+        "address": "0xa004fb0ec7b04c41cd62b606693ad090bfab9998"
+      }
+    },
+    "name": "development"
+  },
+  "0x914db1fbe2b8fc8561b419ef9e7a0c7cd63ac18711331d06229f603ac4197364": {
+    "contracts": {
+      "0x87ea6203e652534847955d521f0ba43109f5013b1c5e49d1b451a1ae10e8ec37": {
+        "name": "StockBlock",
+        "address": "0x201bc8c216a979be62d87d32c6361bd5e80ecfa4"
+      },
+      "0x560e9eddff83470daf103ed5e310092a3271d8901131da31773930a2399c5c8f": {
+        "name": "StockBlock",
+        "address": "0x22e177bb6ef99410973bdb5e671ab587aa915f1f"
+      },
+      "0x74ae3b0c1bc5232e09d721303214055f5204698b7275ef5561fa46e4ac627739": {
+        "name": "StockBlock",
+        "address": "0x1f6dda6cd3ea632c5f05c80c9c3f70037c384c0b"
+      }
+    },
+    "name": "development"
+  }
+}

@@ -15,7 +15,7 @@
     ],
     "gas": "auto",
     "contracts": {
-      "SimpleStorage": {
+      "StockBlock": {
         "args": [
           100
         ]

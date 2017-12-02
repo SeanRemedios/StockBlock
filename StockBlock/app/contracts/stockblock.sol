@@ -72,4 +72,12 @@ contract StockBlock {
 		arr.push(data);
 	}
 
+	event Transfer(address buyer, address owner, uint amount);
+
+    function buy(address receiver, uint photoID) public {
+        Transfer(msg.sender, receiver, prices[photoID]);
+    }
+	
+
+
 }

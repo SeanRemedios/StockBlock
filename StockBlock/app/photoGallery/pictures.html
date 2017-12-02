@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="css/lightbox.min.css">
+  <script src="../js/app.js"></script>
 </head>
 <body>
 
@@ -30,77 +31,14 @@
 		<img class = "banner-image" src="../pictures/onthedock.png">
 	</div>
 
-	<div id = "wrapper">
-		<!---Gallery Row 1 Start-->
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery1.jpg" data-lightbox = "example-set" data-title = "Picture One"><img class = "example-image" src="uploadedImages/gallery1.jpg" alt="Picture One" title="Pic One"></a>
-			<button type="button"> BUY </button>
-		</section>
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery2.jpg" data-lightbox = "example-set" data-title = "Picture Two"><img class = "example-image" src="uploadedImages/gallery2.jpg" alt="Picture Two" title="Pic Two"></a>
-			<button type="button"> BUY </button>
-		</section>
-
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery3.jpg" data-lightbox = "example-set" data-title = "Picture Three"><img class = "example-image" src="uploadedImages/gallery3.jpg" alt="Picture Three" title="Pic Three"></a>
-			<button type="button"> BUY </button>
-		</section>
-		<!---Gallery Row 1 end-->
-
-		<!---Gallery Row 2 Start-->
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery4.jpg" data-lightbox = "example-set" data-title = "Picture Four"><img class="somethingdifferent" src="uploadedImages/gallery4.jpg" alt="Picture Four" title="Pic Four"></a>
-			<button type="button"> BUY </button>
-		</section>
-
-
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery5.jpg" data-lightbox = "example-set" data-title = "Picture Five"><img class = "example-image" src="uploadedImages/gallery5.jpg" alt="Picture Five" title="Pic Five"></a>
-			<button type="button"> BUY </button>
-		</section>
-
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery6.jpg" data-lightbox = "example-set" data-title = "Picture Six"><img class = "example-image" src="uploadedImages/gallery6.jpg" alt="Picture POOP" title="Pic Six"></a>
-			<button type="button"> BUY </button>
-		</section>
-		<!---Gallery Row 2 end-->
-
-		<!---Gallery Row 3 Start-->
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery7.jpg" data-lightbox = "example-set" data-title = "Picture Seven"><img class = "example-image" src="uploadedImages/gallery7.jpg" alt="Picture Seven" title="Pic Seven"></a>
-			<button type="button"> BUY </button>
-		</section>
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery8.jpg" data-lightbox = "example-set" data-title = "Picture Eight"><img class = "example-image" src="uploadedImages/gallery8.jpg" alt="Picture Eight" title="Pic Eight"></a>
-			<button type="button"> BUY </button>
-		</section>
-
-		<section class = "one-third">
-			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery9.jpg" data-lightbox = "example-set" data-title = "Picture Nine"><img class = "example-image" src="uploadedImages/gallery9.jpg" alt="Picture Nine" title="Pic Nine"></a>
-			<button type="button"> BUY </button>
-		</section>
-		<!---Gallery Row 3 end-->
-
-
-		 <h3>upload file to ipfs</h3>
+	<div id = "upload">
+		<h3>Upload a picture</h3>
         <div class="form-group form-inline">
           <input type="file" class="form-control">
           <button class="uploadFile set btn btn-primary">upload</button>
-          <p>generated hash: <span class="fileIpfsHash"></span></p>
         </div>
 
-        <div>
-        	<p><img class="ipfsImage" src=""></p>
-        </div>
-
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         	$("button.uploadFile").click(function(){
 
         	var input = $("input[type=file]");
@@ -108,7 +46,147 @@
 
         	});
 
+		</script> -->
+
+
+		<!---Gallery Row 1 Start-->
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture One"><img class = "gallery1" src="" title="Pic One"></a>
+			<button type="button" id="0" value="0" onclick="buyClicked(this)"> BUY </button>
+			<span class="1" ></span>
+		</section>
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Two"><img class = "gallery2" src="" title="Pic Two"></a>
+			<button type="button" id="1" value="1" onclick="buyClicked(this)"> BUY </button>
+			<span class="2" ></span>
+		</section>
+
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Three"><img class = "gallery3" src="" title="Pic Three"></a>
+			<button type="button" id="2" value="2" onclick="buyClicked(this)"> BUY </button>
+			<span class="3" ></span>
+		</section>
+		<!---Gallery Row 1 end-->
+
+		<!---Gallery Row 2 Start-->
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Four"><img class="gallery4" src="" title="Pic Four"></a>
+			<button type="button" id="3" value="3" onclick="buyClicked(this)">  BUY </button>
+			<span class="4" ></span>
+		</section>
+
+
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Five"><img class = "gallery5" src="" title="Pic Five"></a>
+			<button type="button" id="4" value="4" onclick="buyClicked(this)"> BUY </button>
+			<span class="5" ></span>
+		</section>
+
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Six"><img class = "gallery6" src="" title="Pic Six"></a>
+			<button type="button" id="5" value="5" onclick="buyClicked(this)"> BUY </button>
+			<span class="6" ></span>
+		</section>
+		<!---Gallery Row 2 end-->
+
+		<!---Gallery Row 3 Start-->
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Seven"><img class = "gallery7" src="" title="Pic Seven"></a>
+			<button type="button" id="6" value="6" onclick="buyClicked(this)"> BUY </button>
+			<span class="7" ></span>
+		</section>
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Eight"><img class = "gallery8" src="" title="Pic Eight"></a>
+			<button type="button" id="7" value="7" onclick="buyClicked(this)"> BUY </button>
+			<span class="8" ></span>
+		</section>
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "" data-lightbox = "example-set" data-title = "Picture Nine"><img class = "gallery9" src="" title="Pic Nine"></a>
+			<button type="button" id="8" value="8" onclick="buyClicked(this)"> BUY </button>
+			<span class="9" ></span>
+		</section>
+		<!---Gallery Row 3 end-->
+
+		<script type="text/javascript">
+
+			function buyClicked(elem) {
+				var photoID = elem.id;
+			 	var hashVal;
+				if (EmbarkJS.isNewWeb3()) {
+					StockBlock.methods.getHash(photoID).call(function(err, hash) {
+						hashVal = hash;
+						console.log(hashVal);
+					});
+					StockBlock.methods.increasePrice(photoID).send({from:web3.eth.defaultAccount, gas:500000});
+					StockBlock.methods.buy("0x16d1f1ad7b3306ce8fa8b7245832461f3d246a4b", photoID).send({from:web3.eth.defaultAccount, gas:500000});
+
+				var priceVal;
+				StockBlock.methods.getPrice(photoID).call(function(err, price) {
+						priceVal = price;
+						console.log(priceVal);
+				});
+				console.log(priceVal);
+				switch (photoID) {
+				case 0:
+					$("img.gallery1").attr('title', "Price: " + priceVal);
+					break;
+				case 1:
+					$("img.gallery2").attr('title', "Price: " + priceVal);
+					break;
+				case 2:
+					$("img.gallery3").attr('title', "Price: " + priceVal);
+					break;
+				case 3:
+					$("img.gallery4").attr('title', "Price: " + priceVal);
+					break;
+				case 4:
+					$("img.gallery5").attr('title', "Price: " + priceVal);
+					break;
+				case 5:
+					$("img.gallery6").attr('title', "Price: " + priceVal);
+					break;
+				case 6:
+					$("img.gallery7").attr('title', "Price: " + priceVal);
+					break;
+				case 7:
+					$("img.gallery8").attr('title', "Price: " + priceVal);
+					break;
+				case 8:
+					$("img.gallery9").attr('title', "Price: " + priceVal);
+					break;
+				default:
+					// Nothing
+					break;
+			}
+
+				} else {
+					StockBlock.getHash(photoID).then(function(hash) {
+						hashVal = hash;
+					});
+					StockBlock.increasePrice(photoID);
+				}
+
+				// var hash = $("#storage input.fileIpfsHash").val();
+				// var url = EmbarkJS.Storage.getUrl(hash);
+				var webUrl = "https://ipfs.io/ipfs/" + hashVal;
+				var downUrl = hashVal;
+				var webLink = '<a href="' + webUrl + '" target="_blank">' + webUrl + '</a>';
+				var downLink = '<a href="' + downUrl + '" download="_blank">' + downUrl + '</a>';
+				// $("span.ipfsWebUrl").html(webLink);
+				// $("span.ipfsDownUrl").html(downLink);
+				// $("img.ipfsImage").attr('src', webUrl);
+			}
 		</script>
+
+
 	</div>
 
 <script src="js/lightbox-plus-jquery.min.js"></script>

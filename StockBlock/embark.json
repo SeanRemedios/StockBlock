@@ -1,10 +1,29 @@
 {
   "contracts": ["app/contracts/**"],
   "app": {
-    "css/app.css": ["app/css/**", "app/home.css","app/photoGallery/css/**","app/photoGallery/pictures.css"],
-    "images/": ["app/images/**", "app/pictures/**", "app/photoGallery/images/**", "app/photoGallery/uploadedImages/**"],
-    "js/app.js": ["embark.js", "app/js/_vendor/jquery.min.js", "app/js/_vendor/bootstrap.min.js", "app/js/**","app/photoGallery/js/**"],
-    "index.html": ["app/index.html","app/photoGallery/pictures.html","app/photoGallery/survey.html"]
+    "css/app.css": ["app/css/**"],
+    "home.css": "app/home.css",
+   
+    "photoGallery/css/lightbox.css": "app/photoGallery/css/lightbox.css",
+    "photoGallery/css/lightbox.min.css": "app/photoGallery/css/lightbox.min.css",
+    "photoGallery/css": "app/photoGallery/css/**",
+    "photoGallery/pictures.css": "app/photoGallery/pictures.css",
+    
+    "images/": ["app/images/**"],
+
+    "photoGallery/js/lightbox.js": "app/photoGallery/js/lightbox.js",
+    "photoGallery/js/lightbox.min.js": "app/photoGallery/js/lightbox.min.js",
+    "photoGallery/js/lightbox.min.map": "app/photoGallery/js/lightbox.min.map",
+    "photoGallery/js/lightbox-plus-jquery.js": "app/photoGallery/js/lightbox-plus-jquery.js",
+    "photoGallery/js/lightbox-plus-jquery.min.js": "app/photoGallery/js/lightbox-plus-jquery.min.js",
+    "photoGallery/js/lightbox-plus-jquery.min.map": "app/photoGallery/js/lightbox-plus-jquery.min.map",
+
+
+    "js/app.js": ["embark.js", "app/js/_vendor/jquery.min.js", "app/js/_vendor/bootstrap.min.js", "app/js/**"],
+    "index.html": ["app/index.html"],
+    "upload.html": "app/upload.html",
+    "photoGallery/pictures.html": "app/photoGallery/pictures.html",
+    "photoGallery/survey.html": "app/photoGallery/survey.html"
   },
   "buildDir": "dist/",
   "config": "config/",

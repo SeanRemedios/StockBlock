@@ -12,7 +12,7 @@ describe("StockBlock", function() {
   });
 
   it("should set initial price", function(done) {
-    StockBlock.absoluteInitial(function(err, result) {
+    StockBlock.absoluteInitial(function (err, result) {
       assert.equal(result.toNumber(), 3);
       done();
     });
@@ -21,10 +21,10 @@ describe("StockBlock", function() {
   it("should set photo and hash", function(done) {
     StockBlock.setPrice(function() {
       StockBlock.setHash('s', function() {
-        StockBlock.getPrice(0, function(err, result) {
+        StockBlock.getPrice(0, function (err, result) {
           assert.equal(result, 3);
         });
-        StockBlock.getHash(0, function(err, result) {
+        StockBlock.getHash(0, function (err, result) {
           assert.equal(result, 's');
           done();
         });
@@ -34,8 +34,18 @@ describe("StockBlock", function() {
 
   it("should increase price", function(done) {
     StockBlock.increasePrice(0, function() {
-      StockBlock.getPrice(0, function(err, result) {
+      StockBlock.getPrice(0, function (err, result) {
         assert.equal(result, 3);
+        done();
+      });
+      done();
+    });
+  });
+
+  it("should decrease price", function(done) {
+    StockBlock.decreasePrice(0, function() {
+      StockBlock.getPrice(0, function (err, result) {
+        assert.equal(result, 2);
         done();
       });
       done();

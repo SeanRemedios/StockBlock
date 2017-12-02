@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Block | Pictures</title>
+  <link rel="stylesheet" type="text/css" href="pictures.css" />
+  <link rel="stylesheet" type="text/css" href="../home.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+<body>
+
+	<ul class = "nav">
+
+		<div class = "logo">
+			<a href="../index.html"> Stock Block </a>
+
+		</div>
+
+		<li><a href="photoGallery/pictures.html"> PICTURES </a></li>
+		<li><a href="../upload.html"> UPLOAD </a></li>
+
+	</ul>
+
+	<div class="banner">
+		<img class = "banner-image" src="../pictures/onthedock.png">
+	</div>
+
+	<div id = "wrapper">
+		<!---Gallery Row 1 Start-->
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery1.jpg" data-lightbox = "example-set" data-title = "Picture One"><img class = "example-image" src="uploadedImages/gallery1.jpg" alt="Picture One" title="Pic One"></a>
+			<button type="button"> BUY </button>
+		</section>
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery2.jpg" data-lightbox = "example-set" data-title = "Picture Two"><img class = "example-image" src="uploadedImages/gallery2.jpg" alt="Picture Two" title="Pic Two"></a>
+			<button type="button"> BUY </button>
+		</section>
+
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery3.jpg" data-lightbox = "example-set" data-title = "Picture Three"><img class = "example-image" src="uploadedImages/gallery3.jpg" alt="Picture Three" title="Pic Three"></a>
+			<button type="button"> BUY </button>
+		</section>
+		<!---Gallery Row 1 end-->
+
+		<!---Gallery Row 2 Start-->
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery4.jpg" data-lightbox = "example-set" data-title = "Picture Four"><img class="somethingdifferent" src="uploadedImages/gallery4.jpg" alt="Picture Four" title="Pic Four"></a>
+			<button type="button"> BUY </button>
+		</section>
+
+
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery5.jpg" data-lightbox = "example-set" data-title = "Picture Five"><img class = "example-image" src="uploadedImages/gallery5.jpg" alt="Picture Five" title="Pic Five"></a>
+			<button type="button"> BUY </button>
+		</section>
+
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery6.jpg" data-lightbox = "example-set" data-title = "Picture Six"><img class = "example-image" src="uploadedImages/gallery6.jpg" alt="Picture POOP" title="Pic Six"></a>
+			<button type="button"> BUY </button>
+		</section>
+		<!---Gallery Row 2 end-->
+
+		<!---Gallery Row 3 Start-->
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery7.jpg" data-lightbox = "example-set" data-title = "Picture Seven"><img class = "example-image" src="uploadedImages/gallery7.jpg" alt="Picture Seven" title="Pic Seven"></a>
+			<button type="button"> BUY </button>
+		</section>
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery8.jpg" data-lightbox = "example-set" data-title = "Picture Eight"><img class = "example-image" src="uploadedImages/gallery8.jpg" alt="Picture Eight" title="Pic Eight"></a>
+			<button type="button"> BUY </button>
+		</section>
+
+		<section class = "one-third">
+			<a class = "example-image-link" id = "lightbox-img" href= "uploadedImages/gallery9.jpg" data-lightbox = "example-set" data-title = "Picture Nine"><img class = "example-image" src="uploadedImages/gallery9.jpg" alt="Picture Nine" title="Pic Nine"></a>
+			<button type="button"> BUY </button>
+		</section>
+		<!---Gallery Row 3 end-->
+
+
+		 <h3>upload file to ipfs</h3>
+        <div class="form-group form-inline">
+          <input type="file" class="form-control">
+          <button class="uploadFile set btn btn-primary">upload</button>
+          <p>generated hash: <span class="fileIpfsHash"></span></p>
+        </div>
+
+        <div>
+        	<p><img class="ipfsImage" src=""></p>
+        </div>
+
+        <script type="text/javascript">
+        	$("button.uploadFile").click(function(){
+
+        	var input = $("input[type=file]");
+			$("img.somethingdifferent").attr('src', input);
+
+        	});
+
+		</script>
+	</div>
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>

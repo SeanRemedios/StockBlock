@@ -1,0 +1,47 @@
+<DOCTYPE <html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Stock Block | Upload</title>
+	<link rel = "stylesheet" type= "text/css" href="home.css">
+</head>
+
+<body>
+
+	<ul class = "nav">
+
+		<div class = "logo">
+			<a href="index.html"> Stock Block </a>
+		</div>
+		<li><a href="photoGallery/pictures.html"> PICTURES </a></li>
+		<li><a href="upload.html"> UPLOAD </a></li>
+	</ul>
+
+	<div class="banner">
+		<img class = "banner-image" src="pictures/onthedock.png">
+	</div>
+
+	<div id="uploadPhoto">
+        <h3>upload file to ipfs</h3>
+        <div class="form-group form-inline">
+          <input type="file" class="form-control">
+          <button class="uploadFile set btn btn-primary">upload</button>
+          <p>generated hash: <span class="fileIpfsHash"></span></p>
+        </div>
+
+        <div>
+        	<p><img class="ipfsImage" src=""></p>
+        </div>
+
+        <script type="text/javascript">
+        	var input = $("input[type=file]");
+			$("img.somethingdifferent").attr("title", "test");
+		</script>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

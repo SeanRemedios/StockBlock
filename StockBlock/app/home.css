@@ -1,0 +1,132 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.nav{
+	color: #000000;
+	list-style: none;
+	text-align: right;
+	padding: 20px 0 0 0;
+}
+
+.nav > li{
+	display: inline-block;
+	padding:0 25px 0 25px;
+	font-size: 12px;
+
+}
+
+.nav > li > a{
+	text-decoration: none;
+	color:#000000;
+}
+
+.nav > li > a:hover {
+	color:#c1c1c1;
+}
+ 
+.logo{
+	color: #000000;
+	float:left;
+	padding-left: 25px;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+.logo > a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.banner{
+	width:100%;
+	display: block;
+}
+
+.banner > .banner-image{
+	width:100%;
+	display: block;
+}
+
+
+/*------------------------------------------*/
+
+
+.service1{
+	width:268px;
+	border: 1px solid #c1c1c1;
+	margin:20px 10px;
+	padding:0 5px;
+	float:left;
+	text-align: center;
+}
+
+.service1 > p{
+	font-size: 14px;
+	color: #636363;
+	max-width: 250px;
+}
+
+.services {
+	width: 2000px;
+	margin:0 auto;
+}
+
+h1{
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #c1c1c1;
+	color: #ffffff;
+	padding: 10px 0;
+	margin: 0 -6px;
+}
+
+.image{
+	max-width: 200px;
+	margin: 15px 15px 0 0;
+}
+
+.heading{
+	text-align: center;
+	font-size: 25px;
+	color: #c1c1c1;
+	margin: 100px 0 0 0;
+}
+
+.image:hover {
+	opacity: 0.2;
+	max-width: 200px;
+	margin-top: 15px;
+}
+
+
+.stats > h3{
+	font-size: 30px;
+	padding-left: 25px;
+}
+
+.stats > h2{
+	font-size: 20px;
+	padding-left: 25px;
+}
+
+.description{
+	text-align: left;
+	padding:100px 50px 0 500px;
+}
+
+.songs {
+	text-align: center;
+	padding: 25px 25px 25px 25px ;
+}
+
+h2{
+	text-align: center;
+}
+
+.youtubeVid{
+	padding-left:25px;
+}

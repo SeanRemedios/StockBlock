@@ -10,6 +10,7 @@ contract StockBlock {
 	//uint public price;
 
 	uint[] public prices;
+	string[] public hashes;
 
 	// Constrcutor
 	function StockBlock(uint initialPrice) public {
@@ -44,8 +45,8 @@ contract StockBlock {
 	}
 
 	// Add a new photo to the list with initial price
-	function setPhoto() public {
-		append(prices, absoluteInitial);	
+	function setPrice() public {
+		append_num(prices, absoluteInitial);	
 	}
 
 	// Return the price of the photo
@@ -53,8 +54,22 @@ contract StockBlock {
 		return prices[photoID];
 	}
 
-	// Append something to a list with data
-	function append(uint[] storage arr, uint data) internal {
+	function setHash(string hash) public {
+		append_str(hashes, hash);
+	}
+
+	function getHash(uint photoID) external view returns(string hash) {
+		return hashes[photoID];
+	}
+
+	// Append uint to a list with data
+	function append_num(uint[] storage arr, uint data) internal {
 		arr.push(data);
 	}
+
+	// Append string to a list with data
+	function append_str(string[] storage arr, string data) internal {
+		arr.push(data);
+	}
+
 }

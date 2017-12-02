@@ -20,17 +20,20 @@ contract StockBlock {
 	// Increase the price of a photo for every download
 	function increasePrice(uint photoID) public {
 		uint currentPrice = prices[photoID];
-		uint factor1 = uint(3)/uint(2);
-		uint factor2 = uint(17)/uint(10);
-		uint factor3 = 3;
+		// uint factor1 = uint(3)/uint(2);
+		// uint factor2 = uint(17)/uint(10);
+		// uint factor3 = 3;
 		// 1.5*1.7*3
-		require(currentPrice <= (factor1*factor2*factor3)*absoluteInitial && currentPrice > 0);
+		//require(currentPrice <= (factor1*factor2*factor3)*absoluteInitial && currentPrice > 0);
+		require(currentPrice <= 5*absoluteInitial && currentPrice > 0);
 
-		if ((currentPrice == absoluteInitial*factor1) 
-			|| (currentPrice == absoluteInitial*factor1*factor2)
-			|| (currentPrice == (absoluteInitial*factor1*factor2*factor3)-increaseFactor)) {
-			currentPrice += increaseFactor; 
-		}
+		// if ((currentPrice == absoluteInitial*factor1) 
+		// 	|| (currentPrice == absoluteInitial*factor1*factor2)
+		// 	|| (currentPrice == (absoluteInitial*factor1*factor2*factor3)-increaseFactor)) {
+		// 	currentPrice += increaseFactor; 
+		// }
+
+		currentPrice += increaseFactor;
 
 		prices[photoID] = currentPrice;
 	}

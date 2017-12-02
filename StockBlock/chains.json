@@ -66,6 +66,23 @@
       "0x74ae3b0c1bc5232e09d721303214055f5204698b7275ef5561fa46e4ac627739": {
         "name": "StockBlock",
         "address": "0x1f6dda6cd3ea632c5f05c80c9c3f70037c384c0b"
+      },
+      "0xb562671d3fcf3844c7fb182b960c38b3db52d9fcb02a8e4ac37e8eacea0c1607": {
+        "name": "StockBlock",
+        "address": "0xbaa44b41d0283bd3d97ff8b4d37c2fd96b17cc0c"
+      }
+    },
+    "name": "development"
+  },
+  "0xf1af8f00b9f5b53511203609f36c0832d9d344cca3b0d24ce642474b28d3aade": {
+    "contracts": {
+      "0xb562671d3fcf3844c7fb182b960c38b3db52d9fcb02a8e4ac37e8eacea0c1607": {
+        "name": "StockBlock",
+        "address": "0xefb57474ecbb110013699695aac9c0bd3735b7c3"
+      },
+      "0xd4b847b626199f5ac87e284e9b048ede5d8ee64cf49134acf0591b4910458aa0": {
+        "name": "StockBlock",
+        "address": "0xf1957676d537a74b52a779d7ac58be0dfe22045b"
       }
     },
     "name": "development"

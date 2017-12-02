@@ -126,14 +126,14 @@
 						console.log(hashVal);
 					});
 					StockBlock.methods.increasePrice(photoID).send({from:web3.eth.defaultAccount, gas:500000});
-					StockBlock.methods.buy("0x16d1f1ad7b3306ce8fa8b7245832461f3d246a4b", photoID).send({from:web3.eth.defaultAccount, gas:500000});
+					//StockBlock.methods.buy("0x16d1f1ad7b3306ce8fa8b7245832461f3d246a4b", photoID).send({from:web3.eth.defaultAccount, gas:500000});
 
 				var priceVal;
 				StockBlock.methods.getPrice(photoID).call(function(err, price) {
 						priceVal = price;
 						console.log(priceVal);
 				});
-				console.log(priceVal);
+				console.log(photoID);
 				switch (photoID) {
 				case 0:
 					$("img.gallery1").attr('title', "Price: " + priceVal);

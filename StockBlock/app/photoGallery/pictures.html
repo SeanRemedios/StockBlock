@@ -36,6 +36,7 @@
         <div class="form-group form-inline">
           <input type="file" class="form-control">
           <button class="uploadFile set btn btn-primary">upload</button>
+          <p>Download Link: <span class='down'></span></p>
         </div>
 
         <!-- <script type="text/javascript">
@@ -47,7 +48,6 @@
         	});
 
 		</script> -->
-
 
 		<!---Gallery Row 1 Start-->
 		<section class = "one-third">
@@ -119,22 +119,31 @@
 
 			function buyClicked(elem) {
 				var photoID = elem.id;
+				console.log("PhotoID:" + photoID);
 			 	var hashVal;
 				if (EmbarkJS.isNewWeb3()) {
 					StockBlock.methods.getHash(photoID).call(function(err, hash) {
 						hashVal = hash;
-						console.log(hashVal);
+						console.log("Hash: " + hashVal);
+						
+						var webUrl = "https://ipfs.io/ipfs/" + hashVal;
+						var downUrl = hashVal;
+						var webLink = '<a href="' + webUrl + '" download="_blank">' + "photo.jpg" + '</a>';
+						//var downLink = '<a href="' + webUrl + '" download=""'> + downUrl + '</a>';
+						//console.log(webLink);
+						//console.log(downLink);
+						$("span.down").html(webLink);
 					});
 					StockBlock.methods.increasePrice(photoID).send({from:web3.eth.defaultAccount, gas:500000});
 					//StockBlock.methods.buy("0x16d1f1ad7b3306ce8fa8b7245832461f3d246a4b", photoID).send({from:web3.eth.defaultAccount, gas:500000});
-
 				var priceVal;
 				StockBlock.methods.getPrice(photoID).call(function(err, price) {
 						priceVal = price;
-						console.log(priceVal);
+					//	console.log(priceVal);
 				});
-				console.log(photoID);
-				switch (photoID) {
+
+				//console.log(photoID);
+				switch (elem.id) {
 				case 0:
 					$("img.gallery1").attr('title', "Price: " + priceVal);
 					break;
@@ -176,10 +185,10 @@
 
 				// var hash = $("#storage input.fileIpfsHash").val();
 				// var url = EmbarkJS.Storage.getUrl(hash);
-				var webUrl = "https://ipfs.io/ipfs/" + hashVal;
-				var downUrl = hashVal;
-				var webLink = '<a href="' + webUrl + '" target="_blank">' + webUrl + '</a>';
-				var downLink = '<a href="' + downUrl + '" download="_blank">' + downUrl + '</a>';
+				// var webUrl = "https://ipfs.io/ipfs/" + hashVal;
+				// var downUrl = hashVal;
+				// var webLink = '<a href="' + webUrl + '" target="_blank">' + webUrl + '</a>';
+				// var downLink = '<a href="' + downUrl + '" download="_blank">' + downUrl + '</a>';
 				// $("span.ipfsWebUrl").html(webLink);
 				// $("span.ipfsDownUrl").html(downLink);
 				// $("img.ipfsImage").attr('src', webUrl);

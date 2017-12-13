@@ -1,7 +1,9 @@
 # StockBlock
 Decentralized Stock Photo marketplace using the Ethereum Blockchain. <br />
 Made by: Sean Remedios & Taylor Simpson <br />
-for Local Hack Day 2017 at Queen's University <br />
+*for Local Hack Day 2017 at Queen's University* <br />
+
+![alt text](https://raw.githubusercontent.com/SeanRemedios/StockBlock/master/StockBlock/app/pictures/stockblock.png "StockBlock") <br />
 
 ## Installation
 
@@ -46,6 +48,9 @@ embark run
 ```
 4. Open a browser window (preferably Google Chrome) and add the testrpc mnemonic to MetaMask by clicking: `Import Existing DEN`
 5. Go to http://localhost:8000/ to view the webpage.
+
+## Devpost
+Check the project out on Devpost: https://devpost.com/software/stock-block
 
 ## More Information
 For more information visit the following links:
